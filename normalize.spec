@@ -20,11 +20,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Normalize is an overly complicated tool for adjusting the volume of
 wave files to a standard level.  This is useful for things like
-creating mixed CD's and mp3 collections, where different recording
+creating mixed CD's and MP3 collections, where different recording
 levels on different albums can cause the volume to vary greatly from
 song to song.
 
-You can also adjust the volume of mp3 files without reencoding, but it
+You can also adjust the volume of MP3 files without reencoding, but it
 requires player with support for RVA2 (Relative Volume Adjustment)
 ID3v2 frame. Plugin for xmms is available.
 
