@@ -8,6 +8,7 @@ Group:		Applications/Sound
 Source0:	http://www.cs.columbia.edu/~cvaill/normalize/%{name}-%{version}.tar.bz2
 # Source0-md5: 7476f028304791595e91610bb0cd4e97
 URL:		http://www.cs.columbia.edu/~cvaill/normalize/
+BuildRequires:	automake
 BuildRequires:	gettext-devel
 BuildRequires:	libmad-devel
 BuildRequires:	rpmbuild(macros) >= 1.125
@@ -22,6 +23,7 @@ wave files to a standard level.  This is useful for things like
 creating mixed CD's and mp3 collections, where different recording
 levels on different albums can cause the volume to vary greatly from
 song to song.
+
 You can also adjust the volume of mp3 files without reencoding, but it
 requires player with support for RVA2 (Relative Volume Adjustment)
 ID3v2 frame. Plugin for xmms is available.
@@ -33,13 +35,14 @@ w sytuacjach takich jak tworzenie sk³adankowych p³yt CD oraz zbiorów
 MP3, gdzie ró¿ne poziomy nagrywania na ró¿nych albumach mog±
 spowodowaæ, ¿e poziom g³o¶no¶ci ró¿ni siê do¶æ istotnie pomiêdzy
 poszczególnymi utworami.
-Jesli masz odtwarzacz mp3 korzystaj±cy z ramek RVA2 w tagach ID3v2, to
-mo¿esz równie¿ normalizowaæ pliki mp3 bez konieczno¶ci ponownego
-skompresowania pliku.
+
+Je¶li mamy odtwarzacz MP3 korzystaj±cy z ramek RVA2 w znacznikach
+ID3v2, to mo¿emy równie¿ normalizowaæ pliki MP3 bez konieczno¶ci
+ponownego kompresowania pliku.
 
 %package -n xmms-effect-rva
-sUMMAry:	RVA2 (Relative Volume Adjustment) ID3v2 frame support
-Summary(pl):	Obs³uga ramek RVA2 tagów ID3v2
+Summary:	RVA2 (Relative Volume Adjustment) ID3v2 frame support
+Summary(pl):	Obs³uga ramek RVA2 znaczników ID3v2
 Group:		X11/Applications/Sound
 Requires:	xmms
 
@@ -48,14 +51,14 @@ Plugin for xmms that supports volume adjustment frames (RVA2 ID3v2
 frames).
 
 %description -n xmms-effect-rva -l pl
-Wtyczka dla xmms-a zapewniaj±ca obs³ugê zawartych w pliku mp3
-informacji o dostrojeniu g³o¶no¶ci (ramki RVA2 w tagach ID3v2).
+Wtyczka dla xmms-a zapewniaj±ca obs³ugê zawartych w pliku MP3
+informacji o dostrojeniu g³o¶no¶ci (ramek RVA2 w znacznikach ID3v2).
 
 %prep
 %setup  -q
 
 %build
-cp /usr/share/automake/config.sub config
+cp -f /usr/share/automake/config.sub config
 
 %configure \
 	--with-mad \
