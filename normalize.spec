@@ -9,7 +9,7 @@ Source0:	http://www.cs.columbia.edu/~cvaill/normalize/%{name}-%{version}.tar.bz2
 # Source0-md5: 7476f028304791595e91610bb0cd4e97
 BuildRequires:	gettext-devel
 BuildRequires:	mad-devel
-Buildrequires:	rpmbuild(macros) >= 1.125
+BuildRequires:	rpmbuild(macros) >= 1.125
 BuildRequires:	xmms-devel
 URL:		http://www.cs.columbia.edu/~cvaill/normalize/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
