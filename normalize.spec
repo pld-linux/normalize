@@ -1,14 +1,13 @@
 Summary:	A WAV file volume adjuster
 Summary(pl):	Korektor poziomu g³o¶no¶ci w plikach WAV
 Name:		normalize
-Version:	0.5.2
-Release:	2
+Version:	0.6.1
+Release:	1
 License:	GPL
 Group:		Applications/Sound
 Group(de):	Applikationen/Laut
 Group(pl):	Aplikacje/D¼wiêk
 Source0:	http://www.cs.columbia.edu/~cvaill/normalize/%{name}-%{version}.tar.gz
-Patch0:		%{name}-glibc.patch
 BuildRequires:	gettext-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -31,12 +30,13 @@ poszczególnymi utworami.
 
 %prep
 %setup  -q
-%patch -p1
 
 %build
+rm -f missing
 gettextize --copy --force
 aclocal
 autoconf
+automake -a -c
 %configure 
 
 %{__make}
