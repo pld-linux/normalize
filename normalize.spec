@@ -5,8 +5,6 @@ Version:	0.6.1
 Release:	2
 License:	GPL
 Group:		Applications/Sound
-Group(de):	Applikationen/Laut
-Group(pl):	Aplikacje/D¼wiêk
 Source0:	http://www.cs.columbia.edu/~cvaill/normalize/%{name}-%{version}.tar.gz
 BuildRequires:	gettext-devel
 BuildRequires:	autoconf
