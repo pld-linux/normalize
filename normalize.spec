@@ -1,8 +1,12 @@
+#
+# Conditional build:
+%bcond_without	xmms	# disable XMMS support
+
 Summary:	A WAV and MP3 file volume adjuster
 Summary(pl):	Korektor poziomu g³o¶no¶ci w plikach WAV i MP3
 Name:		normalize
 Version:	0.7.6
-Release:	4
+Release:	5
 License:	GPL
 Group:		Applications/Sound
 Source0:	http://www.cs.columbia.edu/~cvaill/normalize/%{name}-%{version}.tar.bz2
@@ -12,10 +16,12 @@ BuildRequires:	automake
 BuildRequires:	gettext-devel
 BuildRequires:	libmad-devel
 BuildRequires:	rpmbuild(macros) >= 1.125
-BuildRequires:	xmms-devel
+%{?with_xmms:BuildRequires:	xmms-devel}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%if %{with xmms}
 %define		_libdir		%{xmms_effect_plugindir}
+%endif
 
 %description
 Normalize is an overly complicated tool for adjusting the volume of
@@ -62,7 +68,7 @@ cp -f /usr/share/automake/config.sub config
 
 %configure \
 	--with-mad \
-	--enable-xmms \
+	--%{!?with_xmms:disable-xmms} \
 	--with-xmms-prefix=%{xmms_prefix} \
 	--without-audiofile \
 	--disable-audiofiletest
@@ -88,6 +94,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/normalize
 %{_mandir}/man1/*
 
+%if %{with xmms}
 %files -n xmms-effect-rva
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/*.so
+%endif
