@@ -2,7 +2,7 @@ Summary:	A WAV and MP3 file volume adjuster
 Summary(pl):	Korektor poziomu g³o¶no¶ci w plikach WAV i MP3
 Name:		normalize
 Version:	0.7.6
-Release:	3
+Release:	4
 License:	GPL
 Group:		Applications/Sound
 Source0:	http://www.cs.columbia.edu/~cvaill/normalize/%{name}-%{version}.tar.bz2
@@ -38,7 +38,7 @@ mo¿esz równie¿ normalizowaæ pliki mp3 bez konieczno¶ci ponownego
 skompresowania pliku.
 
 %package -n xmms-effect-rva
-Summary:	RVA2 (Relative Volume Adjustment) ID3v2 frame support
+sUMMAry:	RVA2 (Relative Volume Adjustment) ID3v2 frame support
 Summary(pl):	Obs³uga ramek RVA2 tagów ID3v2
 Group:		X11/Applications/Sound
 Requires:	xmms
