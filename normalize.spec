@@ -2,7 +2,7 @@ Summary:	A WAV file volume adjuster
 Summary(pl):	Korektor poziomu g³o¶no¶ci w plikach WAV
 Name:		normalize
 Version:	0.6.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Sound
 Group(de):	Applikationen/Laut
