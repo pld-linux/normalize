@@ -39,14 +39,14 @@ skompresowania pliku.
 %package -n xmms-effect-rva
 Summary:	RVA2 (Relative Volume Adjustment) ID3v2 frame support
 Summary(pl):	Obs³uga ramek RVA2 tagów ID3v2
-Group:		X11/Applications/Multimedia
+Group:		X11/Applications/Sound
 
 %description -n xmms-effect-rva
 Plugin for xmms that supports volume adjustment frames (RVA2 ID3v2
 frames).
 
 %description -n xmms-effect-rva -l pl
-Plugin dla xmms-a zapewniaj±cy obs³ugê zawartych w pliku mp3
+Wtyczka dla xmms-a zapewniaj±ca obs³ugê zawartych w pliku mp3
 informacji o dostrojeniu g³o¶no¶ci (ramki RVA2 w tagach ID3v2).
 
 %prep
