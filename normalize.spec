@@ -1,7 +1,7 @@
 Summary:	A WAV and MP3 file volume adjuster
 Summary(pl):	Korektor poziomu g³o¶no¶ci w plikach WAV i MP3
 Name:		normalize
-Version:	0.7.2
+Version:	0.7.4
 Release:	1
 License:	GPL
 Group:		Applications/Sound
@@ -12,8 +12,8 @@ BuildRequires:	xmms-devel
 URL:		http://www.cs.columbia.edu/~cvaill/normalize/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define	_libdir		%(xmms-config --effect-plugin-dir)
-%define _xmmsprefix	/usr/X11R6
+%define		_libdir		%(xmms-config --effect-plugin-dir)
+%define		_xmmsprefix	/usr/X11R6
 
 %description
 Normalize is an overly complicated tool for adjusting the volume of
@@ -69,8 +69,6 @@ rm -rf $RPM_BUILD_ROOT
 
 mv -f $RPM_BUILD_ROOT%{_bindir}/normalize-mp3 .
 
-gzip -9nf README NEWS TODO
-
 %find_lang %{name}
 
 %clean
@@ -78,7 +76,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc *.gz normalize-mp3
+%doc README NEWS TODO normalize-mp3
 %attr(755,root,root) %{_bindir}/normalize
 %{_mandir}/man1/*
 
