@@ -55,6 +55,8 @@ informacji o dostrojeniu g³o¶no¶ci (ramki RVA2 w tagach ID3v2).
 %setup  -q
 
 %build
+cp /usr/share/automake/config.sub config
+
 %configure \
 	--with-mad \
 	--enable-xmms \
