@@ -35,7 +35,7 @@ gettextize --copy --force
 aclocal
 autoconf
 automake -a -c
-%configure 
+%configure
 
 %{__make}
 
