@@ -6,7 +6,7 @@ Release:	4
 License:	GPL
 Group:		Applications/Sound
 Source0:	http://www.cs.columbia.edu/~cvaill/normalize/%{name}-%{version}.tar.bz2
-# Source0-md5: 7476f028304791595e91610bb0cd4e97
+# Source0-md5:	7476f028304791595e91610bb0cd4e97
 URL:		http://www.cs.columbia.edu/~cvaill/normalize/
 BuildRequires:	automake
 BuildRequires:	gettext-devel
