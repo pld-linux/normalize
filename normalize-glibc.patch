@@ -1,0 +1,10 @@
+--- normalize-0.5.2/riff.h.orig	Sun Jan 28 12:01:00 2001
++++ normalize-0.5.2/riff.h	Wed Aug  1 21:02:41 2001
+@@ -23,6 +23,7 @@
+ #endif /* __cplusplus */
+ 
+ 
++#include <stdint.h>
+ #include <stdio.h>
+ #include <sys/types.h>
+ 
