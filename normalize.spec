@@ -58,5 +58,5 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc *.gz normalize-mp3
-%attr(755,root,root) %{_bindir}/*
+%attr(755,root,root) %{_bindir}/normalize
 %{_mandir}/man*/*
