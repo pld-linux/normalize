@@ -26,7 +26,7 @@ song to song.
 
 You can also adjust the volume of MP3 files without reencoding, but it
 requires player with support for RVA2 (Relative Volume Adjustment)
-ID3v2 frame. Plugin for xmms is available.
+ID3v2 frame. Plugin for XMMS is available.
 
 %description -l pl
 Normalize jest narzêdziem do ustawiania poziomu g³o¶no¶ci w plikach
@@ -47,11 +47,11 @@ Group:		X11/Applications/Sound
 Requires:	xmms
 
 %description -n xmms-effect-rva
-Plugin for xmms that supports volume adjustment frames (RVA2 ID3v2
+Plugin for XMMS that supports volume adjustment frames (RVA2 ID3v2
 frames).
 
 %description -n xmms-effect-rva -l pl
-Wtyczka dla xmms-a zapewniaj±ca obs³ugê zawartych w pliku MP3
+Wtyczka dla XMMS-a zapewniaj±ca obs³ugê zawartych w pliku MP3
 informacji o dostrojeniu g³o¶no¶ci (ramek RVA2 w znacznikach ID3v2).
 
 %prep
