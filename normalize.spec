@@ -2,19 +2,19 @@ Summary:	A WAV and MP3 file volume adjuster
 Summary(pl):	Korektor poziomu g³o¶no¶ci w plikach WAV i MP3
 Name:		normalize
 Version:	0.7.6
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications/Sound
 Source0:	http://www.cs.columbia.edu/~cvaill/normalize/%{name}-%{version}.tar.bz2
 # Source0-md5: 7476f028304791595e91610bb0cd4e97
 BuildRequires:	gettext-devel
 BuildRequires:	mad-devel
+Buildrequires:	rpmbuild(macros) >= 1.125
 BuildRequires:	xmms-devel
 URL:		http://www.cs.columbia.edu/~cvaill/normalize/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_libdir		%(xmms-config --effect-plugin-dir)
-%define		_xmmsprefix	%(xmms-config --prefix)
+%define		_libdir		%{xmms_effect_plugindir}
 
 %description
 Normalize is an overly complicated tool for adjusting the volume of
@@ -41,6 +41,7 @@ skompresowania pliku.
 Summary:	RVA2 (Relative Volume Adjustment) ID3v2 frame support
 Summary(pl):	Obs³uga ramek RVA2 tagów ID3v2
 Group:		X11/Applications/Sound
+Requires:	xmms
 
 %description -n xmms-effect-rva
 Plugin for xmms that supports volume adjustment frames (RVA2 ID3v2
@@ -57,7 +58,7 @@ informacji o dostrojeniu g³o¶no¶ci (ramki RVA2 w tagach ID3v2).
 %configure \
 	--with-mad \
 	--enable-xmms \
-	--with-xmms-prefix=%{_xmmsprefix} \
+	--with-xmms-prefix=%{xmms_prefix} \
 	--without-audiofile \
 	--disable-audiofiletest
 
@@ -66,7 +67,8 @@ informacji o dostrojeniu g³o¶no¶ci (ramki RVA2 w tagach ID3v2).
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} DESTDIR=$RPM_BUILD_ROOT install
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 mv -f $RPM_BUILD_ROOT%{_bindir}/normalize-mp3 .
 
