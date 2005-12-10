@@ -68,7 +68,7 @@ cp -f /usr/share/automake/config.sub config
 
 %configure \
 	--with-mad \
-	--%{!?with_xmms:disable-xmms} \
+	%{!?with_xmms:--disable-xmms} \
 	--with-xmms-prefix=%{xmms_prefix} \
 	--without-audiofile \
 	--disable-audiofiletest
