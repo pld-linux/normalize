@@ -3,7 +3,7 @@
 %bcond_without	xmms	# disable XMMS support
 
 Summary:	A WAV and MP3 file volume adjuster
-Summary(pl):	Korektor poziomu g≥o∂no∂ci w plikach WAV i MP3
+Summary(pl.UTF-8):   Korektor poziomu g≈Ço≈õno≈õci w plikach WAV i MP3
 Name:		normalize
 Version:	0.7.6
 Release:	5
@@ -34,21 +34,21 @@ You can also adjust the volume of MP3 files without reencoding, but it
 requires player with support for RVA2 (Relative Volume Adjustment)
 ID3v2 frame. Plugin for XMMS is available.
 
-%description -l pl
-Normalize jest narzÍdziem do ustawiania poziomu g≥o∂no∂ci w plikach
-WAV przez dostosowanie go do standardowej warto∂ci. Jest to przydatne
-w sytuacjach takich jak tworzenie sk≥adankowych p≥yt CD oraz zbiorÛw
-MP3, gdzie rÛøne poziomy nagrywania na rÛønych albumach mog±
-spowodowaÊ, øe poziom g≥o∂no∂ci rÛøni siÍ do∂Ê istotnie pomiÍdzy
-poszczegÛlnymi utworami.
+%description -l pl.UTF-8
+Normalize jest narzƒôdziem do ustawiania poziomu g≈Ço≈õno≈õci w plikach
+WAV przez dostosowanie go do standardowej warto≈õci. Jest to przydatne
+w sytuacjach takich jak tworzenie sk≈Çadankowych p≈Çyt CD oraz zbior√≥w
+MP3, gdzie r√≥≈ºne poziomy nagrywania na r√≥≈ºnych albumach mogƒÖ
+spowodowaƒá, ≈ºe poziom g≈Ço≈õno≈õci r√≥≈ºni siƒô do≈õƒá istotnie pomiƒôdzy
+poszczeg√≥lnymi utworami.
 
-Je∂li mamy odtwarzacz MP3 korzystaj±cy z ramek RVA2 w znacznikach
-ID3v2, to moøemy rÛwnieø normalizowaÊ pliki MP3 bez konieczno∂ci
+Je≈õli mamy odtwarzacz MP3 korzystajƒÖcy z ramek RVA2 w znacznikach
+ID3v2, to mo≈ºemy r√≥wnie≈º normalizowaƒá pliki MP3 bez konieczno≈õci
 ponownego kompresowania pliku.
 
 %package -n xmms-effect-rva
 Summary:	RVA2 (Relative Volume Adjustment) ID3v2 frame support
-Summary(pl):	Obs≥uga ramek RVA2 znacznikÛw ID3v2
+Summary(pl.UTF-8):   Obs≈Çuga ramek RVA2 znacznik√≥w ID3v2
 Group:		X11/Applications/Sound
 Requires:	xmms
 
@@ -56,9 +56,9 @@ Requires:	xmms
 Plugin for XMMS that supports volume adjustment frames (RVA2 ID3v2
 frames).
 
-%description -n xmms-effect-rva -l pl
-Wtyczka dla XMMS-a zapewniaj±ca obs≥ugÍ zawartych w pliku MP3
-informacji o dostrojeniu g≥o∂no∂ci (ramek RVA2 w znacznikach ID3v2).
+%description -n xmms-effect-rva -l pl.UTF-8
+Wtyczka dla XMMS-a zapewniajƒÖca obs≈Çugƒô zawartych w pliku MP3
+informacji o dostrojeniu g≈Ço≈õno≈õci (ramek RVA2 w znacznikach ID3v2).
 
 %prep
 %setup  -q
