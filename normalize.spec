@@ -3,7 +3,7 @@
 %bcond_without	xmms	# disable XMMS support
 
 Summary:	A WAV and MP3 file volume adjuster
-Summary(pl.UTF-8):   Korektor poziomu głośności w plikach WAV i MP3
+Summary(pl.UTF-8):	Korektor poziomu głośności w plikach WAV i MP3
 Name:		normalize
 Version:	0.7.6
 Release:	5
@@ -48,7 +48,7 @@ ponownego kompresowania pliku.
 
 %package -n xmms-effect-rva
 Summary:	RVA2 (Relative Volume Adjustment) ID3v2 frame support
-Summary(pl.UTF-8):   Obsługa ramek RVA2 znaczników ID3v2
+Summary(pl.UTF-8):	Obsługa ramek RVA2 znaczników ID3v2
 Group:		X11/Applications/Sound
 Requires:	xmms
 
