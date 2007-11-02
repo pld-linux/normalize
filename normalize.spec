@@ -5,13 +5,13 @@
 Summary:	A WAV and MP3 file volume adjuster
 Summary(pl.UTF-8):	Korektor poziomu głośności w plikach WAV i MP3
 Name:		normalize
-Version:	0.7.6
-Release:	5
+Version:	0.7.7
+Release:	1
 License:	GPL
 Group:		Applications/Sound
-Source0:	http://www.cs.columbia.edu/~cvaill/normalize/%{name}-%{version}.tar.bz2
-# Source0-md5:	7476f028304791595e91610bb0cd4e97
-URL:		http://www.cs.columbia.edu/~cvaill/normalize/
+Source0:	http://savannah.nongnu.org/download/normalize/%{name}-%{version}.tar.bz2
+# Source0-md5:	1749b16fc7a08aa5d0cf9f76eeaa8436
+URL:		http://normalize.nongnu.org/
 BuildRequires:	automake
 BuildRequires:	gettext-devel
 BuildRequires:	libmad-devel
