@@ -13,7 +13,7 @@ Source0:	http://savannah.nongnu.org/download/normalize/%{name}-%{version}.tar.bz
 # Source0-md5:	1749b16fc7a08aa5d0cf9f76eeaa8436
 URL:		http://normalize.nongnu.org/
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	libmad-devel
 BuildRequires:	rpmbuild(macros) >= 1.125
 %{?with_xmms:BuildRequires:	xmms-devel >= 1.0.0}
